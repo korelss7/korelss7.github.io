@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+  <title>Internet de las cosas</title>
+  <link rel="stylesheet" href="../css/estilo_SYPF.css">
+  <link rel="stylesheet" href="../css/menu-burger.css">
+<body>
+  <header>
+    <div class="barra">
+      <div class="logo-container">
+        <img src="../images/logo-IOT.png" alt="logo-iot">
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="" class="detalle">Detalle</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <h1>Internet de las cosas</h1>
+
+      <div id="hamburger">
+        <button>
+          <span class="top-line"></span>
+          <span class="mid-line"></span>
+          <span class="bot-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="navExtend">
+      <ul>
+        <li><a href="../index_SYPF.html">Inicio</a></li>
+        <li><a href="">Detalle</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-2">
+    <article class="article-2">
+      <section class="section-2">
+        <div class="tarjeta">
+          <h2>Billetera Electrónica (BIM)</h2>
+          <p>Este es un sistema que recién se expande en nuestro país. Desde tu celular puedes recibir y enviar dinero sin consumir el saldo o megas de tu teléfono móvil.</p>
+        </div>
+
+        <div class="image">
+          <div class="fuente">
+            <img src="../images/BIM.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="tarjeta">
+          <h2>Balizas Informativas</h2>
+          <p>Son también llamadas ‘beacons’. Al pasar cerca de ellas se comunican con nuestro móvil. La llamada publicidad por proximidad y el pago por el teléfono son su mayor uso.</p>
+        </div>
+        
+        <div class="image">
+          <div class="fuente">
+            <img src="../images/baliza-info.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="tarjeta">
+          <h2>Horno Inteligente</h2>
+          <p>La empresa Dacor desarrolló un horno llamado Discovery IQ que tiene WI-FI y puede ser controlado vía smartphone o tablet. Reconoce muchas recetas y hacer el trabajo solo. Cuanto el plato está listo, envía un mensaje al usuario.</p>
+        </div>
+
+        <div class="image">
+          <div class="fuente">
+            <img src="../images/horno-inteli.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="tarjeta">
+          <h2>Botones Inteligentes</h2>
+          <p>Amazon llegó a un acuerdo con un fabricante de detergente que permite tener un botón, que es smart, acoplado a la lavadora. De esta manera, cuando falte el producto, tú puedes comprarlo solo con pulsar el botón. Amazon recibe la orden de compra y la envía directamente a tu domicilio.</p>
+        </div>
+        
+        <div class="image">
+          <div class="fuente">
+            <img src="../images/btn-inteli.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="tarjeta">
+          <h2>Sensores para el jardín</h2>
+          <p>La compañía Parrot ofrece el sensor Flower Power, destinado a jardines, que registra datos sobre la luz solar, la temperatura, el nivel de fertilizante en el suelo y la humedad. De esta manera, el sensor analiza lo que necesitan las plantas y envía alertas a través de bluetooth al smartphone del usuario.</p>
+        </div>
+        
+        <div class="image">
+          <div class="fuente">
+            <img src="../images/sensor-jardin.jpg" alt="">
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <span>Redes</span>
+
+    <div class="redes">
+      <a href="https://www.whatsapp.com/?lang=es"><img src="../images/logoWhats.png" width="27px"><span>WhatsApp</span></a>
+      <a href="https://es-la.facebook.com/"><img src="../images/logoFb.png" width="30px"><span>Facebook</span></a>
+      <a href="https://pe.linkedin.com/"><img src="../images/logoLinkedIn.png" width="27px"><span>LinkedIn</span></a>
+      <a href="https://www.youtube.com/"><img src="../images/logoYt.png" width="28px"><span>Youtube</span>
+      <a href="https://twitter.com/"><img src="../images/logoTwitter.png" width="26px"><span>Twitter</span></a>
+    </div>
+  </footer>
+
+  <script>
+    const menu = document.querySelector('#hamburger button');
+    const nav = document.querySelector('#navExtend ul');
+    menu.addEventListener('click', e => {
+      menu.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

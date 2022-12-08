@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+  <title>Internet de las cosas</title>
+  <link rel="stylesheet" href="./css/estilo_SYPF.css">
+  <link rel="stylesheet" href="./css/menu-burger.css">
+<body>
+  <header>
+    <div class="barra">
+      <div class="logo-container">
+        <img src="./images/logo-IOT.png" alt="logo-iot">
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="" class="inicio">Inicio</a></li>
+          <li><a href="./pages/detalle_SYPF.html">Detalle</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <h1>Internet de las cosas</h1>
+
+      <div id="hamburger">
+        <button>
+          <span class="top-line"></span>
+          <span class="mid-line"></span>
+          <span class="bot-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="navExtend">
+      <ul>
+        <li><a href="">Inicio</a></li>
+        <li><a href="./pages/detalle_SYPF.html">Detalle</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-1">
+    <article>
+      <section class="caja-1">
+        <div class="titular">
+          <h2>UN HOGAR CONECTADO CON EL INTERNET DE LAS COSAS</h2>
+          <p>La tecnología IoT nos ayuda a facilitar las tareas del hogar</p>
+        </div>
+        <img src="./images/portada-iot.png" alt="portada">
+      </section>
+
+      <section class="caja-2">
+        <div class="ficha ficha-1">
+          <div class="titulo">
+            <h2>¿Que es?</h2>
+          </div>
+          <p>La Internet de las cosas (IoT) describe la red de objetos físicos ("cosas") que llevan incorporados sensores, software y otras tecnologías con el fin de conectarse e intercambiar datos con otros dispositivos y sistemas a través de Internet.</p>
+        </div>
+
+        <div class="ficha ficha-2">
+          <div class="titulo">
+            <h2>Importancia</h2>
+          </div>
+          <p>Y es que a través de la informática de bajo costo, los servicios de cloud computing, Big Data, analíticas y dispositivos móviles los objetos físicos son capaces de recopilar, estudiar y compartir datos entre ellos sin tener que ser accionados manualmente por una persona.</p>
+        </div>
+
+        <div class="ficha ficha-3">
+          <div class="titulo">
+            <h2>Origen</h2>
+          </div>
+          <p>El término “Internet de las Cosas” (IoT) fue empleado por primera vez en 1999 por el pionero británico Kevin Ashton para describir un sistema en el cual los objetos del mundo físico se podían conectar a Internet por medio de sensores.</p>
+        </div>
+      </section>
+
+      <section class="caja-3">
+        <div class="titulo">
+          <h2>Características de IOT</h2>
+        </div>
+
+        <div class="fichas">
+          <div class="ficha ficha-1">
+            <p>Automatizacion</p>
+            <img src="./images/iot-icon3.png" alt="icon-3">
+          </div>
+
+          <div class="ficha ficha-2">
+            <p>Adaptabilidad</p>
+            <img src="./images/iot-icon2.png" alt="icon-2">
+          </div>
+
+          <div class="ficha ficha-3">
+            <p>Escalabilidad</p>
+            <img src="./images/iot-icon1.png" alt="icon-1">
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <aside>
+      <h2>Temas relacionados</h2>
+
+      <ul>
+        <li><a href="https://alaisecure.es/5-caracteristicas-iot" target="_blank">Caracteristicas</a></li>
+        <li><a href="https://www.fracttal.com/es/blog/9-aplicaciones-importantes-iot" target="_blank">Aplicaciones</a></li>
+        <li><a href="https://web.truphone.com/es/conocenos/newsroom/que-es-la-conectividad-iot-y-como-elegir-la-mejor-opcion/" target="_blank">Conectividad</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Arquitectura Web</p>
+    <p>Pajita Flores Stefano Yasser</p>
+    <p>2022</p>
+  </footer>
+
+  <script>
+    const menu = document.querySelector('#hamburger button');
+    const nav = document.querySelector('#navExtend ul');
+    menu.addEventListener('click', e => {
+      menu.classList.toggle('open');
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

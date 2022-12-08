@@ -1,0 +1,116 @@
+/*Animaciones del menú hamburguesa*/
+
+#hamburger button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+
+#hamburger button span{
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  width: 68%;
+  margin: 5px auto;
+  height: 2px;
+
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#hamburger button.open .top-line {
+  animation-name: top-line-animation;
+}
+
+#hamburger button.open .mid-line {
+  animation-name: mid-line-animation;
+}
+
+#hamburger button.open .bot-line {
+  animation-name: bot-line-animation;
+}
+
+#hamburger button .top-line {
+  animation-name: top-line-animation-close;
+}
+
+#hamburger button .mid-line {
+  animation-name: mid-line-animation-close;
+}
+
+#hamburger button .bot-line {
+  animation-name: bot-line-animation-close;
+}
+
+@keyframes top-line-animation {
+  50%, 100% {
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
+  }
+}
+
+@keyframes bot-line-animation {
+  50%, 100% {
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
+  }
+}
+
+@keyframes mid-line-animation {
+  20%, 100% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes top-line-animation-close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
+  }
+
+  50%, 100%{
+    margin: 5px auto;
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes bot-line-animation-close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
+  }
+
+  50%, 100%{
+    margin: 5px auto;
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes mid-line-animation-close {
+  0% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
+  }
+
+  20%, 100%{
+    margin: 0 auto;
+    width: 60%;
+    opacity: 1;
+  }
+}
+
+/*Menu desplegable*/
+
+#navExtend ul {
+  display: none;
+}
+
+#navExtend ul.open {
+  display: block;
+}
